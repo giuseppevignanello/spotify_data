@@ -6,21 +6,21 @@ export class TokenInfo {
 
   render() {
     this.container.innerHTML = `
-    <div>
-        <div class="token-info">
-            <button class="toggle-btn">❓</button>
+      <div class="token-info">
+        <div class="toggle-btn-container">      
+          <a class="toggle-btn">❓</a>
         </div>
         <div class="content">
-            <p>To use this app, you need a Spotify OAuth token with <strong>user-top-read</strong> scope.</p>
-            <ol>
-                <li>Go to the <a href="https://developer.spotify.com" target="_blank">Spotify API Console</a>.</li>
-                <li>Login with your Spotify account.</li>
-                <li>The fastes way is to click "See in action" and copy the value of the const token variable</li>
-                <li>Otherwise you can create an app and generate an hour token <a target="_blank" href="https://developer.spotify.com/documentation/web-api/tutorials/getting-started"> here </a> </li>
-            </ol>
-            <span> Neither I or your browser will store your personal token</span>
+          <p>To use this app, you need a Spotify OAuth token with <strong>user-top-read</strong> scope.</p>
+          <ol>
+              <li>Go to the <a href="https://developer.spotify.com" target="_blank">Spotify API Console</a>.</li>
+              <li>Login with your Spotify account.</li>
+              <li>The fastes way is to click "See in action" and copy the value of the const token variable</li>
+              <li>Otherwise you can create an app and generate an hour token <a target="_blank" href="https://developer.spotify.com/documentation/web-api/tutorials/getting-started"> here </a> </li>
+          </ol>
+          <span> Neither I or your browser will store your personal token</span>
         </div>
-    </div>
+      </div>
     `;
 
     const btn = this.container.querySelector('.toggle-btn');

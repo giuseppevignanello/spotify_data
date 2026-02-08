@@ -12,8 +12,8 @@ export class TokenForm {
       <form id="token-form" class="token-form">
         <div class="input-wrapper">
           <input type="text" id="input-token" placeholder="Enter Spotify token" />
-          <div class="info-wrapper"></div>
         </div>
+        <div class="info-wrapper"></div>
         <button type="submit">Search</button>
       </form>
     `;

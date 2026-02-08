@@ -183,6 +183,11 @@ body {
   transform: scale(1.1);
 }
 
+.token-info .toggle-btn-container {
+  display: flex;
+  justify-content: end;
+}
+
 .token-info-content {
   margin-top: 8px;
   background: #181818;
