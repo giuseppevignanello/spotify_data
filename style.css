@@ -1,0 +1,199 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: #121212;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* App container */
+#app {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form container */
+#form-container form {
+  background: #181818;
+  padding: 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+#form-container label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #b3b3b3;
+}
+
+#form-container input {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+#form-container input:focus {
+  border-color: #1db954;
+  box-shadow: 0 0 0 2px rgba(29,185,84,0.3);
+}
+
+#form-container button {
+  padding: 10px 16px;
+  background: #1db954;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+#form-container button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(29,185,84,0.4);
+}
+
+/* Filters container */
+#filters-container #filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#filters-container {
+  background: #181818;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #222;
+}
+
+#filters-container select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #222;
+  color: #fff;
+}
+
+/* Top list */
+#top-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+#top-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #181818;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #222;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+#top-list li:hover {
+  background: #222;
+  transform: translateY(-1px);
+}
+
+#top-list li img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: #ddd;
+}
+
+.track-info .name {
+  font-weight: 700;
+  color: #fff;
+  font-size: 14px;
+}
+
+.track-info .artists {
+  font-size: 13px;
+  color: #b3b3b3;
+}
+
+.track-info .extra {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.token-form .input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.token-form input[type="text"] {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+.token-form .info-btn {
+  width: 10%;
+  padding: 8px 10px;
+  background: #1db954;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #000;
+  transition: transform 0.1s ease;
+}
+
+.token-form .info-btn:hover {
+  transform: scale(1.1);
+}
+
+.token-info-content {
+  margin-top: 8px;
+  background: #181818;
+  border: 1px solid #222;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 13px;
+  color: #ddd;
+}
+
+.token-info-content a {
+  color: #1db954;
+  text-decoration: underline;
+}
